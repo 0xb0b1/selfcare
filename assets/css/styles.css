@@ -5,9 +5,43 @@
     box-sizing: border-box;
 }
 
+/* === mobile styling === */
+
 /* header styling */
 .l-header {
-    background-color: #ccc;
-    width: 100%;
+    background-color: #eee;
+    width: 100vw;
     height: 82px;
 }
+
+.navl {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__logo {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    top: 2rem;
+    left: 0.9rem;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.nav__item {
+    margin: 10px;
+}
+
+.nav__item {
+    color: #5CA720;
+}
+
+/* === desktop styling == */
