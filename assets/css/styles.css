@@ -1,8 +1,28 @@
 
+/* global styling */
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body, button, input {
+    font: 1em Hind, sans-serif;
+    line-height: 1.5em;
+}
+
+body, input {
+    color: #171717;
+}
+
+body {
+    background: #f1f1f1;
+    height: 100vh;
+}
+
+img {
+    object-fit: cover;
 }
 
 /* === mobile styling === */
@@ -11,7 +31,8 @@
 .l-header {
     background-color: #eee;
     width: 100vw;
-    height: 82px;
+    height: 88px;
+    overflow: hidden;
 }
 
 .navl {
@@ -24,9 +45,9 @@
     list-style: none;
     text-decoration: none;
     color: black;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     top: 2rem;
-    left: 0.9rem;
+    left: 1.9rem;
 }
 
 .nav__list {
@@ -43,5 +64,56 @@
 .nav__item {
     color: #5CA720;
 }
+
+/* banner styling */
+
+.banner > img {
+    width: 100vw;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* main content styling */
+.l-main {
+    width: 100vw;
+    height: auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.text > h2 {
+    margin-left: 2.2rem;
+    font-size: 1.2rem;
+}
+
+.text > h3 {
+    margin-right: 2.4rem;
+    font-size: 0.8rem;
+}
+
+/* products section styling */
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+
+.panel > img {
+    width: 120px;
+    height: 120px;
+    margin-top: 2rem;
+}
+
+
 
 /* === desktop styling == */
