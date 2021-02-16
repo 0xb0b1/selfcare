@@ -131,8 +131,7 @@ body::-webkit-scrollbar-thumb:active {
 .products {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-content: center;
-    margin: auto;
+    margin: 0 auto;
     align-content: center;
     text-align: center;
 }
@@ -145,6 +144,7 @@ body::-webkit-scrollbar-thumb:active {
 
 .panel > img:hover {
     transform: rotate(5deg);
+    cursor: pointer;
 }
 
 .panel > p:last-child {
@@ -198,6 +198,30 @@ p > span {
     .panel > p:last-child {
         margin: 0 auto;
     }
+}
+
+
+/* === button === */
+.buy-btn {
+    margin: 2rem;
+    text-align: center;
+}
+
+.buy-btn > button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    font-family: "monospace";
+    font-weight: 700;
+    color: #000;
+    border-radius: 10px;
+    background-color: #5CA720;
+    cursor: pointer;
+}
+
+.buy-btn > button:hover {
+    background-color: #5CA210;
 }
 
 /* === information and contact === */
