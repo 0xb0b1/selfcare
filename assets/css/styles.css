@@ -137,9 +137,8 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .panel > img {
-    width: 30vh;
-    height: 30vh;
     margin-top: 2rem;
+    object-fit: cover;
 }
 
 .panel > img:hover {
@@ -157,7 +156,7 @@ p > span {
 }
 
 /* === small screens === */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 432px) {
     .products {
         display: flex;
         flex-flow: row wrap;
@@ -191,7 +190,7 @@ p > span {
         height: 20vh; 
     }
 
-    p {
+    ·panel > p {
         text-align: center;
     }
 
@@ -226,11 +225,15 @@ p > span {
 
 /* === information and contact === */
 .information {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
     padding: 2rem;
     margin: 0 auto;
     background-color: #eee;
     border-top: 1px solid #ccc;
 }
+
 
 .links {
     display: flex;
@@ -241,6 +244,19 @@ p > span {
     text-decoration: none;
     color: #000;
 }
+
+/* === newsletter subscribe button === */
+
+
+
+/* widescreen */
+@media screen and (min-width: 768px) {
+    .information {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 
 /* === footer styling === */
 .footer {
