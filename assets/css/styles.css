@@ -11,6 +11,12 @@ html {
     scroll-behavior: smooth;
 }
 
+img {
+    object-fit: cover;
+    width: 160px;
+    height: 160px;
+}
+
 body, button, input {
     font: "Lato", sans-serif;
     line-height: 1.5em;
@@ -22,8 +28,6 @@ body, input {
 
 body {
     background: #f1f1f1;
-    width: 100vh;
-    height: 100vh;
 }
 
 /* scrollbar */
@@ -46,10 +50,6 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 /* ======================== */
-
-img {
-    object-fit: cover;
-}
 
 /* === mobile styling === */
 
@@ -143,14 +143,17 @@ img {
     margin-top: 2rem;
 }
 
+.panel > img:hover {
+    transform: rotate(5deg);
+}
+
 .panel > p:last-child {
-    margin-right: 5rem;
     font-weight: 600;
 }
 
-
 p > span {
-    color: #5CA720;
+    color: #50A720;
+    font-weight: 700;
 }
 
 /* === small screens === */
@@ -188,7 +191,50 @@ p > span {
         height: 20vh; 
     }
 
-    .panel > p:last-child {
-        margin-right: 9.4rem;
+    p {
+        text-align: center;
     }
+
+    .panel > p:last-child {
+        margin: 0 auto;
+    }
+}
+
+/* === information and contact === */
+.information {
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links > a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* === footer styling === */
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 2rem;
+    border-top: 1px solid #ccc;
+}
+
+.footer__social, .footer__pm {
+    margin: 2rem;
+}
+
+.footer__social > .social {
+    color: #5CA720;
+}
+
+.payment__icon {
+    color: #000;
 }
